@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+:root {
+  /* --primary-colors --*/
+  --white-ish:#F9F7F7;
+  --light-gray: #DBE2EF;
+  --blue-light:#669bbc;
+  --blue-medium: #0077b6;
+  --blue-dark:rgb(15, 76, 117);
+  --dark-b: #003566;
+  --gray-black: #415a77;
+  --darker-b:#1B262C;
+
+  /* https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
+}
+
+
+h4,h5, p{
+    font-family: 'Ubuntu Sans', sans-serif;
+}
+
+a:hover {
+    color: var(--blue-medium) ;
+    text-decoration: none !important;
+    /* font-size:1.3rem !important; */
+}
+
+/* Section Heading */
+.icon-box h4{
+    color: var(--gray-black) !important;
+    font-weight: 700;
+}
+
+.skill-title{
+    color: var(--gray-black);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.content-card{
+    background: #ffffff;
+    border: 1px solid #d7e3f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 24px;
+}
+
+/* body > div > ol:nth-child(7) > li > button > a */

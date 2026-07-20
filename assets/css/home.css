@@ -1,0 +1,169 @@
+
+:root{
+  --white-ish:#F9F7F7;
+  --light-gray:#DBE2EF;
+  --blue-light:#669bbc;
+  --blue-medium:#0077b6;
+  --blue-dark:#0f4c75;
+  --gray-black:#415a77;
+}
+
+body{
+    font-family:'Ubuntu Sans',sans-serif;
+    background:#fff;
+}
+
+.display-4{
+    font-size:2.8rem;
+    font-weight:800;
+    line-height:1.2;
+    color:#222;
+}
+
+h4{
+    font-weight:700;
+    color:#222;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:1.02rem;
+    line-height:1.8;
+}
+
+.social-icons li{
+    margin-bottom:10px;
+    font-size:1rem;
+}
+
+.social-icons a{
+    color:var(--gray-black);
+    text-decoration:none;
+}
+
+.social-icons a:hover{
+    color:var(--blue-medium);
+}
+
+.content-card{
+    background:#fff;
+    border:1px solid #dbe5ef;
+    border-radius:12px;
+    box-shadow:0 4px 14px rgba(0,0,0,.06);
+    padding:22px;
+    transition:.25s;
+}
+
+.content-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 24px rgba(0,0,0,.10);
+}
+
+.content-card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    border-radius:8px;
+    border:1px solid #dbe5ef;
+}
+
+.badge-pill{
+    background:var(--blue-medium);
+    color:#fff;
+    font-size:.88rem;
+    font-weight:500;
+}
+
+.btn-blue{
+    background:var(--blue-medium);
+    color:#fff!important;
+    border:2px solid var(--blue-medium);
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.btn-blue:hover{
+    background:var(--blue-dark);
+    color:#fff!important;
+}
+
+.btn-blue i{
+    margin-right:6px;
+}
+
+#footer{
+    margin-top:70px;
+}
+
+@media (max-width:992px){
+
+.display-4{
+    font-size:2rem;
+}
+
+img.img-fluid{
+    max-width:280px;
+    display:block;
+    margin:auto;
+}
+
+}
+
+.btn-blue a{
+    color:#fff !important;
+    text-decoration:none;
+}
+
+.btn-blue a:hover{
+    color:#fff !important;
+    text-decoration:none;
+}
+
+.btn-blue{
+    background:#0077b6;
+    border:2px solid #0077b6;
+}
+
+.btn-blue:hover{
+    background:#0f4c75;
+}
+
+/* ===========================
+   Download CV Button
+=========================== */
+
+.btn-download{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    background:#0077b6;
+    color:#fff !important;
+
+    padding:12px 24px;
+    border-radius:10px;
+
+    font-size:1rem;
+    font-weight:600;
+
+    text-decoration:none;
+
+    border:none;
+
+    transition:all .25s ease;
+}
+
+.btn-download:hover{
+    background:#005f91;
+    color:#fff !important;
+
+    text-decoration:none;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(0,119,182,.25);
+}
+
+.btn-download i{
+    font-size:1rem;
+}
