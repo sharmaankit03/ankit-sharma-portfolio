@@ -1,15 +1,17 @@
-# Academic-portfolio
+# Ankit Sharma | Academic Portfolio
 
-An elegant and responsive academic portfolio template built using HTML, CSS, JavaScript. Designed for students, researchers, and academics, this template allows you to showcase your educational background, research projects, publications, and professional accomplishments in a clean and modern layout.
+Personal academic portfolio of Ankit Sharma, PhD Student in Water Resources Development and Management at IIT Roorkee. 
+I work on satellite Earth observation and machine learning for monitoring small inland waterbodies.
 
-## Features
+## What's here
 
-- **Responsive Design**: Ensures optimal viewing experience across various devices including desktops, tablets, and smartphones.
-- **Modern Aesthetic**: Clean and professional design to highlight your academic achievements.
-- **Interactive Elements**: JavaScript-powered features for enhanced user interaction.
-- **Ease of Customization**: Simple HTML and CSS structure for straightforward customization to fit your personal style and needs.
+- Research overview and publications
+- Educational background and experience
+- Projects and professional activities
 
+## Built with
+
+HTML, CSS, and JavaScript. Fully responsive, no frameworks.
 
 ## Credits
-
-Developed with help from Vimal Chamyal (@VimalChamyal).
+Developed with help from [Vimal Chamyal](https://github.com/VimalChamyal).
