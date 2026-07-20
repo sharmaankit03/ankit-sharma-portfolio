@@ -35,17 +35,17 @@ this.innerHTML = ` <div class="footer-lemos mt-5">
                     <i class="footer-icons fa-brands fa-orcid"></i>
                 </a>
 
-                <a href="#" target="_blank" class="mr-3">
-                    <i class="footer-icons fa-brands fa-google-scholar"></i>
-                </a>
+                <a href="https://scholar.google.com/citations?user=Fsq3NAYAAAAJ&hl=en" target="_blank" class="mr-3">
+              <i class="footer-icons fa-brands fa-google-scholar"></i>
+            </a>
 
-                <a href="#" target="_blank" class="mr-3">
-                    <i class="footer-icons fab fa-linkedin"></i>
-                </a>
+                <a href="https://www.linkedin.com/in/sharmasankit/" target="_blank" class="mr-3">
+              <i class="footer-icons fab fa-linkedin"></i>
+            </a>
 
-                <a href="#" target="_blank">
-                    <i class="footer-icons fab fa-github"></i>
-                </a>
+                <a href="https://github.com/sharmaankit03" target="_blank">
+              <i class="footer-icons fab fa-github"></i>
+            </a>
 
             </div>
 
