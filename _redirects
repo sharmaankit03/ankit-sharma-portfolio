@@ -1,0 +1,9 @@
+# Old multi-page URLs -> sections of the single-page site
+/pages/publications.html   /#publications   301
+/pages/projects.html       /#projects       301
+/pages/education.html      /#education      301
+/pages/experience.html     /#experience     301
+/pages/blogposts.html      /#awards         301
+/pages/teaching.html       /#teaching       301
+/pages/skills.html         /#skills         301
+/pages/*                   /                301
