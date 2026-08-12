@@ -215,15 +215,15 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 ========================================================== */
 .pub-group{max-width:var(--maxw);margin:0 auto;padding:0 40px;}
 .pub-group + .pub-group{margin-top:48px;}
-.pub-group h4{font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--teal);font-weight:600;font-family:'Inter',sans-serif;margin-bottom:20px;}
+.pub-group h4{font-size:15.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--teal);font-weight:600;font-family:'Inter',sans-serif;margin-bottom:20px;}
 .pub-list{list-style:none;counter-reset:pub;}
 .pub-list li{
-  counter-increment:pub;position:relative;padding:17px 0 17px 36px;
-  border-bottom:1px solid var(--line);font-size:16.5px;line-height:1.6;color:var(--ink);
+  counter-increment:pub;position:relative;padding:18px 0 18px 38px;
+  border-bottom:1px solid var(--line);font-size:19px;line-height:1.65;color:var(--ink);
 }
 .pub-list li::before{
-  content:counter(pub);position:absolute;left:0;top:18px;font-size:13px;color:var(--teal);
-  font-weight:600;width:24px;
+  content:counter(pub);position:absolute;left:0;top:19px;font-size:14px;color:var(--teal);
+  font-weight:600;width:26px;
 }
 .pub-list li:last-child{border-bottom:none;}
 .pub-list b{font-weight:600;}
@@ -234,9 +234,9 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 }
 .data-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
 .data-item{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 20px;}
-.data-item h5{font-size:16px;font-weight:600;font-family:'Inter',sans-serif;margin:0 0 8px;}
-.data-item p{font-size:15px;line-height:1.6;color:var(--ink-soft);margin:0 0 10px;}
-.data-item a{font-size:14.5px;font-weight:600;}
+.data-item h5{font-size:18px;font-weight:600;font-family:'Inter',sans-serif;margin:0 0 8px;}
+.data-item p{font-size:17px;line-height:1.6;color:var(--ink-soft);margin:0 0 10px;}
+.data-item a{font-size:16px;font-weight:600;}
 
 @media (max-width:700px){
   .data-grid{grid-template-columns:1fr;}
