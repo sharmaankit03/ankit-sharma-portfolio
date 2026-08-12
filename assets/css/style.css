@@ -105,8 +105,8 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
   display:grid;grid-template-columns:1.42fr .58fr;gap:56px;align-items:center;
 }
 .hero-name{
-  font-family:'Fraunces',serif;font-weight:600;font-size:32px;color:#fff;
-  margin:0 0 12px;line-height:1.15;
+  font-family:'Fraunces',serif;font-weight:600;font-size:44px;color:#EFC98C;
+  margin:0 0 14px;line-height:1.15;letter-spacing:.01em;
 }
 .hero-eyebrow{
   font-size:14.5px;letter-spacing:.07em;text-transform:uppercase;
@@ -124,13 +124,23 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 .btn-outline-white:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.08);}
 .hero-credential{margin-top:24px;font-size:17px;color:rgba(255,255,255,.78);}
 
-/* Right-hand profile photo */
-.hero-profile{justify-self:end;width:100%;max-width:330px;}
-.hero-profile img{
-  width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 28%;
-  border-radius:14px;
+/* Right-hand profile photo.
+   Ratio is set with the padding-top trick rather than the aspect-ratio
+   property: padding-top always resolves off the element's own width, so
+   the frame keeps its 3:4 shape even if a parent flex/grid tries to
+   stretch it — aspect-ratio alone can be overridden in that situation. */
+.hero-profile{justify-self:end;align-self:center;width:100%;max-width:330px;}
+.hero-photo-frame{
+  position:relative;width:100%;padding-top:133.33%;
+  max-height:55vh;
+  border-radius:14px;overflow:hidden;
   border:4px solid rgba(255,255,255,.24);
   box-shadow:0 22px 48px rgba(0,0,0,.34);
+}
+.hero-photo-frame img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center 28%;
+  border-radius:0;border:none;box-shadow:none;
 }
 
 @media (max-width:900px){
