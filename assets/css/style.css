@@ -52,7 +52,7 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 }
 .nav-tabs{display:flex;gap:30px;list-style:none;margin:0;padding:0;}
 .nav-tabs a{
-  font-size:15.5px;color:#000;font-weight:500;text-decoration:none;
+  font-size:18px;color:#000;font-weight:500;text-decoration:none;
   padding-bottom:3px;border-bottom:2px solid transparent;
   transition:color .15s, border-color .15s;
 }
@@ -60,9 +60,9 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 .nav-tabs a.active{color:#000;border-color:var(--teal);font-weight:600;}
 .nav-toggle{display:none;background:none;border:none;font-size:24px;color:var(--ink);cursor:pointer;}
 
-@media (max-width:1050px){
-  .nav-tabs{gap:18px;}
-  .nav-tabs a{font-size:14px;}
+@media (max-width:1150px){
+  .nav-tabs{gap:20px;}
+  .nav-tabs a{font-size:16px;}
 }
 @media (max-width:900px){
   .nav-inner{justify-content:flex-end;}
@@ -80,6 +80,15 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 /* ==========================================================
    Hero
 ========================================================== */
+/* Landing: hero + news strip fill exactly one viewport, so the next
+   section never peeks above the fold. --nav-h is measured in main.js. */
+.landing{
+  min-height:calc(100dvh - var(--nav-h, 66px));
+  display:flex;flex-direction:column;
+}
+.landing .hero{flex:1 1 auto;}
+.landing .news-strip{flex:0 0 auto;}
+
 .hero{
   position:relative;display:flex;align-items:center;overflow:hidden;
 }
@@ -110,8 +119,8 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 /* Right-hand profile: name above the portrait, specialization below */
 .hero-profile{justify-self:end;width:100%;max-width:330px;text-align:center;}
 .hero-name{
-  font-family:'Fraunces',serif;font-weight:600;font-size:27px;color:#fff;
-  margin:0 0 14px;line-height:1.2;
+  font-family:'Fraunces',serif;font-weight:600;font-size:36px;color:#fff;
+  margin:0 0 16px;line-height:1.15;
 }
 .hero-profile img{
   width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 28%;
@@ -316,14 +325,14 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 .news-strip{padding:30px 0;border-bottom:1px solid var(--line);}
 .news-inner{max-width:var(--maxw);margin:0 auto;padding:0 40px;display:flex;gap:32px;align-items:flex-start;}
 .news-label{
-  font-size:15px;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--maroon);font-weight:700;padding-top:3px;flex:none;width:120px;
+  font-size:19px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--maroon);font-weight:700;padding-top:2px;flex:none;width:150px;
   animation:news-blink 1.4s ease-in-out infinite;
 }
-.news-list{list-style:none;margin:0;padding:0;flex:1;display:flex;flex-direction:column;gap:11px;}
-.news-list li{font-size:16px;color:var(--ink-soft);line-height:1.6;}
+.news-list{list-style:none;margin:0;padding:0;flex:1;display:flex;flex-direction:column;gap:13px;}
+.news-list li{font-size:17px;color:var(--ink-soft);line-height:1.6;}
 .news-list li:first-child{color:var(--ink);font-weight:500;}
-.news-date{font-size:13.5px;color:var(--teal-deep);font-weight:600;margin-right:10px;}
+.news-date{font-size:16px;color:var(--teal-deep);font-weight:700;margin-right:12px;}
 
 @keyframes news-blink{
   0%,100%{opacity:1;}

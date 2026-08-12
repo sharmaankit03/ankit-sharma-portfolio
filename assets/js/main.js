@@ -13,6 +13,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  var nav = document.querySelector('.site-nav');
+
+  function setNavHeight() {
+    if (nav) {
+      document.documentElement.style.setProperty('--nav-h', nav.offsetHeight + 'px');
+    }
+  }
+
+  setNavHeight();
+  window.addEventListener('resize', setNavHeight);
+
   var cvDropdown = document.querySelector('.cv-dropdown');
   var cvToggle = document.querySelector('.cv-toggle');
 
