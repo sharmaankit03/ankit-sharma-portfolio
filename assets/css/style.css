@@ -182,10 +182,11 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 ========================================================== */
 .cards{max-width:var(--maxw);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;}
 .cards.cols-2{grid-template-columns:repeat(2,1fr);max-width:900px;}
-.card-img{height:220px;border-radius:8px;margin-bottom:20px;background:linear-gradient(135deg,#1F6F78,#4FA8A0);}
-.card-img.b{background:linear-gradient(135deg,#0E3E44,#1F6F78);}
-.card-img.c{background:linear-gradient(135deg,#4FA8A0,#B7D9C2);}
-.card-img img{width:100%;height:100%;object-fit:cover;border-radius:8px;}
+/* Ratio locked with padding-top (see hero-photo-frame) rather than the
+   aspect-ratio property, which can be overridden once a parent grid
+   resolves a definite height for the box. */
+.card-img-frame{position:relative;width:100%;padding-top:109%;margin-bottom:20px;border-radius:8px;overflow:hidden;}
+.card-img-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
 .cards h4{font-size:21px;font-weight:600;font-family:'Inter',sans-serif;margin:0 0 12px;}
 .cards p{font-size:17.5px;line-height:1.7;color:var(--ink-soft);margin:0;}
 
