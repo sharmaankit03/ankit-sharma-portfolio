@@ -239,11 +239,11 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 .tl-period{font-size:14.5px;color:#000;padding-top:4px;}
 .tl-org{font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:10px;}
 .tl-logo{width:30px;height:30px;object-fit:contain;flex:none;border-radius:4px;background:var(--white);border:1px solid var(--line);padding:3px;}
-.tl-item h4{font-size:20px;font-family:'Fraunces',serif;font-weight:500;margin:0 0 4px;}
-.tl-item .tl-place{font-size:14.5px;color:#000;margin-bottom:14px;}
-.tl-item p{font-size:16px;line-height:1.7;color:#000;margin:0 0 12px;}
-.tl-item ul{margin:0 0 12px;padding-left:20px;}
-.tl-item li{font-size:16px;line-height:1.7;color:#000;margin-bottom:4px;}
+.tl-item h4{font-size:22px;font-family:'Fraunces',serif;font-weight:500;margin:0 0 6px;}
+.tl-item .tl-place{font-size:15.5px;color:#000;margin-bottom:14px;}
+.tl-item p{font-size:18.5px;line-height:1.7;color:#000;margin:0 0 12px;}
+.tl-item ul{margin:0 0 12px;padding-left:22px;}
+.tl-item li{font-size:18.5px;line-height:1.7;color:#000;margin-bottom:6px;}
 
 /* Education: large institution mark stacked above the date, in place
    of the plain date-only left column used by other timelines. */
@@ -279,10 +279,15 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
    Skills
 ========================================================== */
 .skills-grid{max-width:var(--maxw);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
-.skill-block h4{font-size:15.5px;font-weight:600;font-family:'Inter',sans-serif;color:var(--teal-deep);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
-.skill-icon{width:20px;height:20px;flex:none;color:var(--teal);}
-.skill-tags{display:flex;flex-wrap:wrap;gap:8px;}
-.skill-tags span{font-size:14.5px;background:var(--white);border:1px solid var(--line);color:#000;padding:7px 13px;border-radius:16px;}
+.skill-block h4{font-size:23px;font-weight:600;font-family:'Inter',sans-serif;color:var(--teal-deep);margin:0 0 18px;display:flex;align-items:center;gap:14px;}
+.skill-icon{width:36px;height:36px;flex:none;color:var(--teal-deep);}
+.skill-tags{display:flex;flex-wrap:wrap;gap:10px;}
+.skill-tags span{
+  font-size:15px;background:var(--white);border:1px solid var(--line);color:#000;
+  padding:7px 14px 7px 7px;border-radius:16px;display:inline-flex;align-items:center;gap:8px;
+}
+.skill-tag-icon{width:22px;height:22px;flex:none;border-radius:50%;object-fit:contain;background:var(--paper);}
+.skill-tag-icon-generic{width:22px;height:22px;flex:none;color:var(--teal);}
 
 @media (max-width:800px){
   .skills-grid{grid-template-columns:1fr 1fr;}
@@ -353,8 +358,8 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 ========================================================== */
 .site-footer{background:var(--teal-deep);color:#fff;padding:56px 0 30px;}
 .footer-inner{max-width:var(--maxw);margin:0 auto;padding:0 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:32px;}
-.footer-brand{font-family:'Fraunces',serif;font-size:21px;margin-bottom:10px;}
-.footer-tag{font-size:15px;color:rgba(255,255,255,.72);max-width:360px;line-height:1.6;}
+.footer-brand{font-family:'Fraunces',serif;font-size:28px;margin-bottom:12px;}
+.footer-tag{font-size:18px;color:rgba(255,255,255,.8);max-width:380px;line-height:1.6;}
 .footer-links{display:flex;gap:22px;list-style:none;flex-wrap:wrap;}
 .footer-links a{color:rgba(255,255,255,.85);font-size:15.5px;}
 .footer-links a:hover{color:#fff;}
