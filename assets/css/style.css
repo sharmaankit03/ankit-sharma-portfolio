@@ -337,21 +337,18 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
 /* ==========================================================
    Current research direction
 ========================================================== */
-.direction-grid{max-width:var(--maxw);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(5,1fr);gap:20px;}
-.direction-card{background:var(--sand);border-radius:12px;padding:28px 20px;text-align:center;}
-.direction-icon{width:34px;height:34px;color:var(--teal);margin:0 auto 16px;}
-.direction-card h4{font-size:15.5px;font-family:'Inter',sans-serif;font-weight:600;color:var(--ink);margin:0 0 8px;line-height:1.3;}
-.direction-card p{font-size:14px;line-height:1.6;color:#000;margin:0;}
+.direction-head{margin-top:56px;}
+.direction-grid{max-width:var(--maxw);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.direction-card{background:var(--sand);border-radius:12px;padding:40px 22px;text-align:center;}
+.direction-icon{width:60px;height:60px;color:var(--teal);margin:0 auto 22px;}
+.direction-card h4{font-size:19px;font-family:'Inter',sans-serif;font-weight:600;color:var(--ink);margin:0;line-height:1.35;}
 
 .looking-ahead{max-width:var(--maxw);margin:40px auto 0;padding:0 40px;}
-.looking-ahead-box{background:var(--teal-pale);border-left:4px solid var(--teal);border-radius:8px;padding:28px 30px;}
-.looking-ahead-box h4{font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--teal-deep);font-weight:600;margin:0 0 10px;}
-.looking-ahead-box p{font-size:16.5px;line-height:1.75;color:#000;margin:0;}
+.looking-ahead-box{background:var(--teal-pale);border-left:4px solid var(--teal);border-radius:8px;padding:30px 32px;}
+.looking-ahead-box h4{font-size:16px;letter-spacing:.05em;text-transform:uppercase;color:var(--teal-deep);font-weight:600;margin:0 0 12px;}
+.looking-ahead-box p{font-size:20px;line-height:1.75;color:#000;margin:0;}
 
-@media (max-width:1100px){
-  .direction-grid{grid-template-columns:repeat(3,1fr);}
-}
-@media (max-width:700px){
+@media (max-width:900px){
   .direction-grid{grid-template-columns:repeat(2,1fr);}
 }
 @media (max-width:480px){
@@ -362,7 +359,9 @@ h1,h2,h3,h4,h5{font-family:'Fraunces',serif;font-weight:500;color:var(--ink);mar
    About / profile strip
 ========================================================== */
 .about{max-width:var(--maxw);margin:0 auto;padding:0 40px;}
-.about-body p{font-size:19px;line-height:1.75;color:#000;margin:0 0 16px;}
+.about-heading{font-size:42px;margin-bottom:20px;}
+.about-body p{font-size:22px;line-height:1.75;color:#000;margin:0 0 16px;}
+.thesis-label{color:var(--teal-deep);font-weight:600;}
 
 /* ==========================================================
    Footer
